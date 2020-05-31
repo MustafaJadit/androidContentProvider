@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void onclickAddName(View view) {
+    public void onClickAddName(View view) {
         ContentValues values = new ContentValues();
         values.put(StudentsProvider.NAME,
                 ((EditText) findViewById(R.id.editText2)).getText().toString());
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickRetrieveStudents(View view) {
-        String URL = "content://com.example.simpleprovider.StudentProvider";
+        String URL = "content://com.example.simpleprovider.StudentsProvider";
 
         Uri students = Uri.parse(URL);
         Cursor cursor = getContentResolver().query(students, null, null, null, "name");

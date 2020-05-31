@@ -19,7 +19,7 @@ import android.net.Uri;
 import android.text.TextUtils;
 
 public class StudentsProvider extends ContentProvider {
-    static final String PROVIDER_NAME = "com.example.MyApplication.StudentsProvider";
+    static final String PROVIDER_NAME = "com.example.simpleprovider.StudentsProvider";
     static final String URL = "content://" + PROVIDER_NAME + "/students";
     static final Uri CONTENT_URI = Uri.parse(URL);
 
